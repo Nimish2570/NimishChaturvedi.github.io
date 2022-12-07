@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimish Chaturvedi</title>
+    <link rel="stylesheet" href="assets/css/style.css"> 
+</head>
+<body>
+    <center>
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#about">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="text">About</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#skills">
+                    <span class="icon"><ion-icon name="medal-outline"></ion-icon></span>
+                    <span class="text">Skills</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#projects">
+                    <span class="icon"><ion-icon name="laptop-outline"></ion-icon></span>
+                    <span class="text">Project</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                    <span class="text">Resume</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="mail-unread-outline"></ion-icon></span>
+                    <span class="text">Contact</span>
+                </a>
+            </li>
+        </ul>
+        <div class="indicator"></div>
+    </div> <br>
+    <div class="home">
+        <hr>
+        <h2> Hello I,m</h2>
+        <h1>Nimish Chaturvedi</h1>
+        <hr>
+    </div>
+    <div id="about">
+    <h1>ABOUT</h1>
+    <div class="container">
+        <div class="panel active" style="background-image: url('assets/img/Web\ dev.jpg')">
+          <h3>Web Desiner</h3>
+          
+        </div>
+        <div class="panel" style="background-image: url('assets/img/pen\ test.jpg')">
+          <h3>Penitration Tester</h3>
+        </div>
+        <div class="panel" style="background-image: url('assets/img/prob\ sol.jpg')">
+          <h3>Problem Solver</h3>
+        </div>
+        <div class="panel" style="background-image: url('assets/img/video\ edit.jpg')">
+          <h3>Video Editor</h3>
+        </div>
+        <div class="panel" style="background-image: url('assets/img/teacher.jpg')">
+          <h3>Tech Teacher</h3>
+        </div>
+  
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/script.js"></script>
+    <div class="skills" id="skills">
+        <hr>
+        <h1>Skills</h1>  
+        <span class="Sphere" ></span>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+    <script>
+        const Texts = [
+            'HTML', 'CSS', 'JAVASCRIPT',
+            'PHP', 'PYTHON', 'REACT',
+            'DSA', 'C++',
+            'BOOTSTRAP', 'XML', 'SQL INJECTION','XSS',
+            'DJANGO', 'MYSQL', 'FLUTTER', 'JAVA'
+        ];
+
+        var tagCloud = TagCloud('.Sphere', Texts, {          
+            radius: 500,
+            maxSpeed: 'normal',
+            initSpeed: 'fast',       
+            direction: 135,
+            keep: true
+
+        });
+        var color = '#FF5733 ';
+        document.querySelector('.Sphere').style.color = color;
+    </script>
+    <hr>
+    <br>
+    <br>
+
+    </div> 
+    <div id="projects" class="projects">
+        <h1>Projects</h1>
+        
+        <hr>
+        <br><br><br>
+        <br><br><br>
+       
+        
+    
+    </div>
+    <div class="resume" id="resume">
+        <h1>Resume</h1>
+        <hr><br><br><br>
+        <a href="assets/pdf/cv.pdf" download class="download-btn">Download Resume <ion-icon name="download-outline"></ion-icon></a>
+        
+        <br><br><br>
+        
+
+
+
+    </div>
+    <div class="contact" id="contact">
+        <h1>Contact</h1>
+        <hr>
+        <br><br><br>
+         
+        <br><br><br>
+        
+    </div>
+
+    
+  
+
+</center>
+</body>
+</html>
